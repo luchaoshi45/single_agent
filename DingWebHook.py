@@ -27,8 +27,6 @@ def setup_logging():
     return logging.getLogger(log_name)
 
 
-##### 用户表存储系统
-user_storage = {}
 class EchoTextHandler(ChatbotHandler):
     def __init__(self):
         super(ChatbotHandler, self).__init__()
@@ -96,4 +94,22 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    from src import *
+    # main()
+
+
+    # p = PromptClass()
+    # res = p.prompt_structure()
+
+    
+    # e = EmotionClass()
+    # res = e.emotion_sensing("我将别生气!")
+    # print(res)
+
+    # dtc = DingTalkClient()
+    # token = dtc.get_access_token()
+    # print("DingTalk Access Token:", token)
+
+    res = search.invoke("今天天气如何？")
+    print(res)
+    

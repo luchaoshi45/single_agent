@@ -28,3 +28,8 @@ langgraph
 graph-rag-example-helpers
 langchain-graph-retriever
 dingtalk-stream
+serpapi
+langchain-qdrant
+qdrant-client
+google-search-results
+redis
