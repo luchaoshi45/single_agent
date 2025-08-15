@@ -18,12 +18,12 @@ def setup_logger():
 def define_options():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--client_id', dest='client_id', required=True,
-        default="dingoji8pbdm95ugkwws"
+        '--client_id', dest='client_id',# required=True,
+        default="dingoji8pbdm95ugkwws",
         help='app_key or suite_key from https://open-dev.digntalk.com'
     )
     parser.add_argument(
-        '--client_secret', dest='client_secret', required=True,
+        '--client_secret', dest='client_secret',# required=True,
         default="UIq3w3ihmKvR9rJNhFx8DbDiRb6bEJypVn6s_hy5bST_7hzdLJajaNlqOEwuPubP",
         help='app_secret or suite_secret from https://open-dev.digntalk.com'
     )
